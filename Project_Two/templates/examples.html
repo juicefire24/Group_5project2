@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Big Cities Health Coalition</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+
+<body class = "bg">
+<div class = "navbar navbar-default navbar-static-top" role = "navigation">
+    <div class = "container">
+      <div class = "navbar-header">
+        <button type="button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+        <a href = "#" class = "navbar-brand">BCHC</a>
+      </div>
+
+      <div class = "navbar-collapse collapse">
+         <ul class = "nav navbar-nav navbar-right">
+            <li><a href = "/">Home</a></li>
+            <li class = "active"><a href = "/examples">Examples</a></li>
+         </ul> 
+      </div>
+    </div>  
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class = "col-md-7">
+      <h2>Pie Chart</h2>                  
+        <img src="{{ url_for('static', filename='images/imagepie.png') }}" class="img-responsive" id="boxshadow" alt="Pie Chart" width="640" height="360">
+    </div>
+    <div class="col-md-4">
+      <div class="row top-buffer">
+        <div class="well" id="examp"><h3 style="color:#fff;">Selection example for pie chart. </h3>
+          <ul id="ulf">Dropdown Selections
+            <li id="lif">Cancer</li>
+            <li id="lif">Race/Ethnicity</li>
+          </ul>
+          <ul id="ulf">Showing the mortality rate for <br> all cancers based on sex</ul>       
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div> 
+  <div class="row">
+    <div class = "col-md-7">
+      <h2>Bar Chart</h2>                  
+        <img src="{{ url_for('static', filename='images/imagebar.png') }}" class="img-responsive" id="boxshadow" alt="Bar Chart" width="640" height="360"> 
+    </div>
+    <div class = "col-md-4">
+      <div class="row top-buffer">
+          <div class="well" id="examp"><h3 style="color:#fff;">Selection example for bar chart. </h3>
+            <ul id="ulf">Dropdown Selections
+                <li id="lif">Cancer</li>
+                <li id="lif">All Years</li>
+            </ul>
+            <ul id="ulf">Showing the mortality rate for <br> all cancers based on year</ul>
+          </div>
+      </div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  <div class="row pb-5">
+    <div class = "col-md-7">
+      <h2>Scatter Chart</h2>                  
+        <img src="{{ url_for('static', filename='images/imagescatter.png') }}" class="img-responsive" id="boxshadow" alt="Scatter Chart" width="640" height="360">
+    </div>
+    <div class = "col-md-4">
+      <div class="row top-buffer">  
+          <div class="well" id="examp"><h3 style="color:#fff;">Selection example for scatter chart. </h3>
+            <ul id="ulf">Dropdown Selections
+                <li id="lif">Percentage of Population with a Disability</li>
+                <li id="lif">Sex</li>
+              </ul>
+              <ul id="ulf">Showing what percentage of the population has a disability split by males, females, and a both (weighted average)</ul>
+          </div>
+      </div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>      
+</div>
+
+</body>
+</html>
